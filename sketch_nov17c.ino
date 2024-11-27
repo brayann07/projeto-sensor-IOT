@@ -229,7 +229,7 @@ void sendHTMLPage(WiFiClient client) {
   client.print("<h1>Sistema de Alarme</h1>");
   client.print("<div class='container'>");
 
-  // Display LED buttons and sensor statuses
+  
   client.print("<p><a href='/T1'>Controle LED 1</a><br>");
   client.print("<span id='sensor1Status'>" + getSensorStatus(ledState1, sensorPin1) + "</span></p>");
   client.print("<p><a href='/T2'>Controle LED 2</a><br>");
