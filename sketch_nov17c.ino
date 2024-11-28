@@ -1,7 +1,11 @@
 #include <WiFi.h>
 #include <WiFiClientSecure.h>
- 
-
+// Comentário de última hora: 28/11
+// O código irá iniciar o Web Server caso tudo tiver ok com as credenciais e vai printar o IP
+// O API do PushBullet irá mostrar no Serial se está funcionando ou não, está no Serial Monitor se haver erro de comunicação
+// Haverá uma constante atualização pelo JavaScript toda vez que haver uma mudança de estado do LED ou Sensor Magnético
+// Sempre enviará a cada 10 segundos uma notificação PUSH pelo PushBullet caso estiver com a condições corretas
+// Condições para enviar mensagem: Led X Ligado e Sensor Y Aberto
 const char *ssid = "Brayan";         
 const char *password = "12345678";   
 
